@@ -1,6 +1,6 @@
 <?php
 
-namespace Weishaypt\FreeKassa\Traits;
+namespace VertisanPRO\FreeKassa\Traits;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;

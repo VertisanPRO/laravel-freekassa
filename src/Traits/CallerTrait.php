@@ -1,11 +1,11 @@
 <?php
 
-namespace Weishaypt\FreeKassa\Traits;
+namespace VertisanPRO\FreeKassa\Traits;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
-use Weishaypt\FreeKassa\Exceptions\InvalidPaidOrder;
-use Weishaypt\FreeKassa\Exceptions\InvalidSearchOrder;
+use VertisanPRO\FreeKassa\Exceptions\InvalidPaidOrder;
+use VertisanPRO\FreeKassa\Exceptions\InvalidSearchOrder;
 
 trait CallerTrait
 {

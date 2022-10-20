@@ -1,6 +1,6 @@
 <?php
 
-namespace Weishaypt\FreeKassa\Exceptions;
+namespace VertisanPRO\FreeKassa\Exceptions;
 
 use Throwable;
 

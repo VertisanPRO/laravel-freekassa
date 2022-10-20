@@ -11,24 +11,24 @@ Accept payments via FreeKassa.ru ([freekassa.ru](https://freekassa.ru/)) using t
 Require this package with composer.
 
 ``` bash
-composer require weishaypt/laravel-freekassa-ru
+composer require vertisanpro/laravel-freekassa
 ```
 
 If you don't use auto-discovery, add the ServiceProvider to the providers array in `config/app.php`
 
 ```php
-Weishaypt\FreeKassa\FreeKassaServiceProvider::class,
+VertisanPRO\FreeKassa\FreeKassaServiceProvider::class,
 ```
 
 Add the `FreeKassa` facade to your facades array:
 
 ```php
-'FreeKassa' => Weishaypt\FreeKassa\Facades\FreeKassa::class,
+'FreeKassa' => VertisanPRO\FreeKassa\Facades\FreeKassa::class,
 ```
 
 Copy the package config to your local config with the publish command:
 ``` bash
-php artisan vendor:publish --provider="Weishaypt\FreeKassa\FreeKassaServiceProvider"
+php artisan vendor:publish --provider="VertisanPRO\FreeKassa\FreeKassaServiceProvider"
 ```
 
 ## Configuration
@@ -181,7 +181,6 @@ If you discover any security related issues, please send me an email at ya@sanek
 ## Credits
 
 - [Weishaypt](https://github.com/Weishaypt)
-- [All Contributors](../../contributors)
 
 ## License
 

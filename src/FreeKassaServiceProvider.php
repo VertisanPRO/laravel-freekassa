@@ -1,6 +1,6 @@
 <?php
 
-namespace Weishaypt\FreeKassa;
+namespace VertisanPRO\FreeKassa;
 
 use Illuminate\Support\ServiceProvider;
 

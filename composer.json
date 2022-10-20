@@ -1,10 +1,10 @@
 {
-    "name": "weishaypt/laravel-freekassa-ru",
+    "name": "vertisanpro/laravel-freekassa",
     "description": "freekassa.ru payments for Laravel",
     "license": "MIT",
     "authors": [
         {
-            "name": "weishaypt",
+            "name": "vertisanpro",
             "email": "ya@sanek.dev"
         }
     ],
@@ -14,8 +14,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Weishaypt\\FreeKassa\\Facades\\": "src/Facades",
-            "Weishaypt\\FreeKassa\\": "src"
+            "VertisanPRO\\FreeKassa\\Facades\\": "src/Facades",
+            "VertisanPRO\\FreeKassa\\": "src"
         }
     },
     "config": {
@@ -24,10 +24,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Weishaypt\\FreeKassa\\FreeKassaServiceProvider"
+                "VertisanPRO\\FreeKassa\\FreeKassaServiceProvider"
             ],
             "aliases": {
-                "FreeKassa": "Weishaypt\\FreeKassa\\Facades\\FreeKassa"
+                "FreeKassa": "VertisanPRO\\FreeKassa\\Facades\\FreeKassa"
             }
         }
     }

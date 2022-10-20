@@ -1,12 +1,12 @@
 <?php
 
-namespace Weishaypt\FreeKassa;
+namespace VertisanPRO\FreeKassa;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
-use Weishaypt\FreeKassa\Traits\CallerTrait;
-use Weishaypt\FreeKassa\Traits\ValidateTrait;
+use VertisanPRO\FreeKassa\Traits\CallerTrait;
+use VertisanPRO\FreeKassa\Traits\ValidateTrait;
 
 class FreeKassa
 {

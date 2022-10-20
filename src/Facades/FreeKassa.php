@@ -1,6 +1,6 @@
 <?php
 
-namespace Weishaypt\FreeKassa\Facades;
+namespace VertisanPRO\FreeKassa\Facades;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Facade;
@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static string redirectToPayUrl($amount, $order_id, $phone = null, $email = null, $user_parameters = [])
  * @method static string getFormSignature($project_id, $amount, $secret, $order_id)
  *
- * @see \Weishaypt\FreeKassa\FreeKassa
+ * @see \VertisanPRO\FreeKassa\FreeKassa
  */
 class FreeKassa extends Facade
 {
