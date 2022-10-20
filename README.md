@@ -33,11 +33,11 @@ php artisan vendor:publish --provider="VertisanPRO\FreeKassa\FreeKassaServicePro
 
 ## Configuration
 
-Once you have published the configuration files, please edit the config file in `config/freekassa.php`.
+Once you have published the configuration files, please edit the config file in `config/billing.php`.
 
 - Create an account on [freekassa.ru](freekassa.ru)
-- Add your project, copy the `project_id`, `secret_key` and `secret_key_second` params and paste into `config/freekassa.php`
-- After the configuration has been published, edit `config/freekassa.php`
+- Add your project, copy the `project_id`, `secret_key` and `secret_key_second` params and paste into `config/billing.php`
+- After the configuration has been published, edit `config/billing.php`
 - Set the callback static function for `searchOrder` and `paidOrder`
 - Create route to your controller, and call `FreeKassa::handle` method
  
@@ -75,7 +75,7 @@ FreeKassa::handle(Request $request)
 
 ## Important
 
-You must define callbacks in `config/freekassa.php` to search the order and save the paid order.
+You must define callbacks in `config/billing.php` to search the order and save the paid order.
 
 
 ``` php
@@ -92,8 +92,8 @@ The process scheme:
 
 1. The request comes from `freekassa.ru` `GET` / `POST` `http://yourproject.com/freekassa/result` (with params).
 2. The function`FreeKassaController@handlePayment` runs the validation process (auto-validation request params).
-3. The method `searchOrder` will be called (see `config/freekassa.php` `searchOrder`) to search the order by the unique id.
-4. If the current order status is NOT `paid` in your database, the method `paidOrder` will be called (see `config/freekassa.php` `paidOrder`).
+3. The method `searchOrder` will be called (see `config/billing.php` `searchOrder`) to search the order by the unique id.
+4. If the current order status is NOT `paid` in your database, the method `paidOrder` will be called (see `config/billing.php` `paidOrder`).
 
 Add the route to `routes/web.php`:
 ``` php
