@@ -14,7 +14,7 @@ class FreeKassaServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../config/billing.php' => config_path('billing.php'),
+            __DIR__.'/../../../../config/billing.php' => config_path('billing.php'),
         ], 'config');
 
         //
@@ -27,7 +27,7 @@ class FreeKassaServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/billing.php', 'freekassa');
+        $this->mergeConfigFrom(__DIR__.'/../../../../config/billing.php', 'freekassa');
 
         $this->app->singleton('freekassa', function () {
             return $this->app->make(FreeKassa::class);
